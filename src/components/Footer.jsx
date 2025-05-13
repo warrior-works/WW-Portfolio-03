@@ -9,9 +9,9 @@ const Footer = () => {
                 <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 s sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
                     © {new Date().getFullYear()}
                     <Link
-                        href="https://twitter.com/warrior_aashuu"
+                        href="https://www.ashutoshkumar.me/"
                     >
-                        - Ashutosh Kumar
+                        - aashuu
                     </Link>
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start items-center">
