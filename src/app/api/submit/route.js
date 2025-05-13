@@ -1,7 +1,4 @@
 import { adminEmail, userEmail } from '@/lib/userEmail';
-import { Resend } from 'resend';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
     try {
@@ -28,36 +25,9 @@ export async function POST(request) {
 
         console.log('Form data received:', { name, email, message });
 
-        let userEmailResponse;
-        try {
-            userEmailResponse = await resend.emails.send({
-                from: 'hello@resend.dev',
-                to: email,
-                subject: 'Thank you for contacting aashuu',
-                html: userEmail(name),
-            });
-            console.log('Resend user email response:', userEmailResponse);
-        } catch (emailError) {
-            console.error('Error sending user email:', emailError);
-        }
-
-        let adminEmailResponse;
-        try {
-            adminEmailResponse = await resend.emails.send({
-                from: 'hello@resend.dev',
-                to: 'hellow.ashutosh@gmail.com',
-                subject: 'New Form Submission',
-                html: adminEmail(name, email, message),
-            });
-            console.log('Resend admin email response:', adminEmailResponse);
-        } catch (emailError) {
-            console.error('Error sending admin email:', emailError);
-        }
-
+        // Simulate form submission success
         return new Response(JSON.stringify({
             message: 'Form submitted successfully!',
-            userEmail: userEmailResponse ? 'Sent' : 'Failed',
-            adminEmail: adminEmailResponse ? 'Sent' : 'Failed'
         }), {
             status: 200,
             headers: { 'Content-Type': 'application/json' },
