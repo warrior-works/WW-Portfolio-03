@@ -108,7 +108,7 @@ export const userEmail = (name) => `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="width:100%;">
 																<div class="alignment" align="center" style="line-height:10px">
-																	<div style="max-width: 500px;"><img src="https://6fa909b5f1.imgdist.com/pub/bfra/f0fx6gqn/zyp/1l7/f2a/Blue%20Modern%20Business%20Profile%20Twitter%20Header.png" style="display: block; height: auto; border: 0; width: 100%;" width="500" alt title height="auto"></div>
+																	<div style="max-width: 500px;"><img src="https://pbs.twimg.com/profile_banners/1744411935414898720/1746566614/1500x500" style="display: block; height: auto; border: 0; width: 100%;" width="500" alt title height="auto"></div>
 																</div>
 															</td>
 														</tr>
@@ -255,7 +255,7 @@ export const adminEmail = (name, email, message) => `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="width:100%;">
 																<div class="alignment" align="center" style="line-height:10px">
-																	<div style="max-width: 500px;"><img src="https://6fa909b5f1.imgdist.com/pub/bfra/f0fx6gqn/zyp/1l7/f2a/Blue%20Modern%20Business%20Profile%20Twitter%20Header.png" style="display: block; height: auto; border: 0; width: 100%;" width="500" alt title height="auto"></div>
+																	<div style="max-width: 500px;"><img src="https://pbs.twimg.com/profile_banners/1744411935414898720/1746566614/1500x500" style="display: block; height: auto; border: 0; width: 100%;" width="500" alt title height="auto"></div>
 																</div>
 															</td>
 														</tr>

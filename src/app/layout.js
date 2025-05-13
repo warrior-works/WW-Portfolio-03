@@ -15,19 +15,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "DevyManish | Manish Gupta's Portfolio",
-  description: "I'm DevyManish by work and Manish Gupta in real life. I am a passionate web developer showcasing my projects and expertise on this portfolio. Explore my work in web development, MERN projects, web applications, and more!",
-  keywords: "devymanish, DevyManish, manishguptafr, portfolio, HTML, CSS, portfolio , Manish Gupta, DevyManish portfolio, devymanish portfolio, Manish Gupta portfolio, manishguptaa, manishguptafr linkedin, manishguptafr website, web developer, MERN projects, web applications",
-  author: "Manish Gupta",
+  title: "Ashutosh Kumar's Portfolio",
+  description: "I'm Ashutosh Kumar by work and aashuu in real life. I am a passionate web developer showcasing my projects and expertise on this portfolio. Explore my work in web development, MERN projects, web applications, and more!",
+  keywords: "ashutoshkumar, ashutoshkumarportfolio, ashutosh, Ashutosh Kumar, Ashutosh Kumar Portfolio, portfolio, HTML, CSS, portfolio , codeaashu, DevDisplay, Ashutosh Kumar codeaashu, aashuu portfolio, aashuu, Ashutosh Kumar linkedin, AshutoshKumar website, web developer, MERN projects, web applications",
+  author: "Ashutosh Kumar",
   canonical: "https://www.ashutoshkumar.me",
   openGraph: {
-    title: "DevyManish | Manish Gupta's Portfolio",
-    description: "I'm DevyManish by work and Manish Gupta in real life. I am a passionate web developer showcasing my projects and expertise on this portfolio. Explore my work in web development, MERN projects, web applications, and more!",
+    title: "Ashutosh Kumar's Portfolio",
+    description: "I'm Ashutosh Kumar by work and aashuu in real life. I am a passionate web developer showcasing my projects and expertise on this portfolio. Explore my work in web development, MERN projects, web applications, and more!",
     url: "https://www.ashutoshkumar.me",
     type: "website",
     images: [
       {
-        url: "http://www.ashutoshkumar.me/src/assets/devymanish-manish-gupta-profile.png",
+        url: "http://www.ashutoshkumar.me/",
         width: 800,
         height: 600,
         alt: "Ashutosh Kumar's Portfolio",
@@ -38,13 +38,13 @@ export const metadata = {
     card: "summary_large_image",
     title: "Ashutosh Kumar Portfolio",
     description: "I'm Ashutosh Kumar by work and aashuu in real life. I am a passionate web developer showcasing my projects and expertise on this portfolio. Explore my work in web development, MERN projects, web applications, and more!",
-    images: ["http://www.manishguptaa.me/src/assets/devymanish-manish-gupta-profile.png"],
+    images: "",
   },
   robots: {
     index: true,
     follow: true,
   },
-  googleSiteVerification: "syWf9ZbBBMmu0eMJwQL0vxjJAj8BH0wpIzk6LcvoDRI",
+  googleSiteVerification: "#",
 };
 
 export default function RootLayout({ children }) {
@@ -52,9 +52,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <link href="/favicon.ico" rel="icon" />
+        <link href="/aashuuprofile.png" rel="icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
+      <title> Ashutosh Kumar's Portfolio</title>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ActiveSectionContextProvider>
           {children}
