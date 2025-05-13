@@ -11,7 +11,7 @@ const HomeSection = () => {
         <section className="flex flex-col mt-8 md:flex-col items-start justify-start w-full md:items-center md:justify-between md:mt-20 py-12 px-12 md:px-20 md:w-2/3 space-y-6" id="home">
             <div className="md:items-center md:justify-between">
                 <TextAnimate animation="blurInUp" by="character" once className="text-xl md:text-lg font-semibold text-gray-400">
-                    Hi, I'm Manish Gupta
+                    Hi, I'm Ashutosh Kumar
                 </TextAnimate>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                     <div>
@@ -28,8 +28,8 @@ const HomeSection = () => {
                     <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                         <TiltedCard
                             imageSrc="/profile.jpg"
-                            altText="Manish Gupta"
-                            captionText="Manish Gupta"
+                            altText="Ashutosh Kumar"
+                            captionText="Ashutosh Kumar"
                             containerHeight="250px"
                             containerWidth="250px"
                             imageHeight="250px"
@@ -45,7 +45,7 @@ const HomeSection = () => {
             </div>
             <div className="flex gap-4 mt-12 py-4 md:py-0 md:mt-6 md:pt-6">
                 <Link
-                    href="https://github.com/devymanish"
+                    href="https://github.com/codeaashu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-800 hover:bg-gray-700 rounded-xl transition"
@@ -53,7 +53,7 @@ const HomeSection = () => {
                     <FaGithub className="w-6 h-6 text-white" />
                 </Link>
                 <Link
-                    href="https://linkedin.com/in/manishguptafr"
+                    href="https://linkedin.com/in/ashutoshkumaraashu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-800 hover:bg-gray-700 rounded-xl transition"
@@ -61,7 +61,7 @@ const HomeSection = () => {
                     <FaLinkedin className="w-6 h-6 text-white" />
                 </Link>
                 <Link
-                    href="mailto:manishguptafr@gmail.com"
+                    href="mailto:hellow.ashutosh@gmail.com"
                     className="p-3 bg-gray-800 hover:bg-gray-700 rounded-xl transition"
                 >
                     <SiMinutemailer className="w-6 h-6 text-white" />

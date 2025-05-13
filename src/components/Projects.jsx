@@ -15,14 +15,14 @@ export default function Projects() {
                 </h1>
 
                 <div className="grid md:grid-cols-2 md:gap-6">
-                    <ProjectCard title="Dakseva" description="Selected for SIH 2024 Finals & scored 2nd best project. Used ResNet-50 for real time queue analysis on 8 parameters. Built over NextJs, ExpressJs & Flask." image="/dakseva.png" />
-                    <ProjectCard title="Jobscout" description="A quick and simple tool for finding jobs in India. Builtin resume analyser for HRs and resume enhancer tool for candidates. Built over NextJs, Flask, PyPDF & Llama." image="/jobscout.png"
+                    <ProjectCard title="GitHub Legacy" description="This tool automatically generates beautiful, customizable resumes by analyzing your GitHub activity, repositories, and contributions. Built over NextJs, Typescript, Tailwind HTML2PDF & Github API." image="/Project1.png" />
+                    <ProjectCard title="Resume Builder" description="A resume builder website is a web-based tool that allows users to create and customize a professional resume to their desired specifications. Built over React, Chakra UI, HTML2PDF, Tailwind & Bootstrap." image="/Project2.png"
                     />
                 </div>
 
                 <div className="flex justify-center w-full items-center py-8">
                     <Link
-                        href="https://www.github.com/devymanish">
+                        href="https://www.github.com/codeaashu">
                         {/* <ShinyText /> */}
                         <RainbowButton><div className="flex gap-2 items-center text-black font-semibold">View More on {' '} <Github className="w-5 h-5" color="#020500" /></div></RainbowButton>
                     </Link>
