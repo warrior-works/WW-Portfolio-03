@@ -1,16 +1,10 @@
 import { adminEmail, userEmail } from '@/lib/userEmail';
-import { createClient } from '@supabase/supabase-js';
 import { Resend } from 'resend';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
     try {
-
         const body = await request.json().catch(e => {
             console.error('Failed to parse request body:', e);
             return null;
@@ -33,24 +27,6 @@ export async function POST(request) {
         }
 
         console.log('Form data received:', { name, email, message });
-
-        const { data: supabaseData, error: supabaseError } = await supabase
-            .from('form_submissions')
-            .insert([{ name, email, message }]);
-
-        if (supabaseError) {
-            console.error('Supabase error:', supabaseError);
-            return new Response(JSON.stringify({
-                message: 'Database error',
-                error: supabaseError.message,
-                code: supabaseError.code
-            }), {
-                status: 500,
-                headers: { 'Content-Type': 'application/json' },
-            });
-        }
-
-        console.log('Data inserted into Supabase:', supabaseData);
 
         let userEmailResponse;
         try {
@@ -80,7 +56,6 @@ export async function POST(request) {
 
         return new Response(JSON.stringify({
             message: 'Form submitted successfully!',
-            supabase: supabaseError ? 'Failed' : 'Success',
             userEmail: userEmailResponse ? 'Sent' : 'Failed',
             adminEmail: adminEmailResponse ? 'Sent' : 'Failed'
         }), {
