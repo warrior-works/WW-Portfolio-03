@@ -63,14 +63,14 @@ export const links2 = [
         icon: (
             <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-        href: "https://twitter.com/l_m_manish",
+        href: "https://x.com/warrior_aashuu",
     },
     {
         title: "GitHub",
         icon: (
             <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-        href: "https://www.github.com/devymanish",
+        href: "https://www.github.com/codeaashu",
     },
 ];
 
