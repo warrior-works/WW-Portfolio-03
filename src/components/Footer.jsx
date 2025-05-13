@@ -7,11 +7,11 @@ const Footer = () => {
         <footer className="text-gray-600 body-font px-20 z-10">
             <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
                 <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 s sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-                    © {new Date().getFullYear()}
+                    {/* © {new Date().getFullYear()} */}
                     <Link
                         href="https://www.ashutoshkumar.me/"
                     >
-                        - aashuu
+                        aashuu
                     </Link>
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start items-center">
