@@ -57,7 +57,7 @@ export async function POST(request) {
             userEmailResponse = await resend.emails.send({
                 from: 'hello@resend.dev',
                 to: email,
-                subject: 'Thank you for contacting Manish',
+                subject: 'Thank you for contacting aashuu',
                 html: userEmail(name),
             });
             console.log('Resend user email response:', userEmailResponse);
@@ -69,7 +69,7 @@ export async function POST(request) {
         try {
             adminEmailResponse = await resend.emails.send({
                 from: 'hello@resend.dev',
-                to: 'manishguptacpn@gmail.com',
+                to: 'hellow.ashutosh@gmail.com',
                 subject: 'New Form Submission',
                 html: adminEmail(name, email, message),
             });

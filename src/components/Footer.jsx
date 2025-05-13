@@ -9,16 +9,16 @@ const Footer = () => {
                 <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 s sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
                     © {new Date().getFullYear()}
                     <Link
-                        href="https://twitter.com/l_m_manish"
+                        href="https://twitter.com/warrior_aashuu"
                     >
-                        - Manish Gupta
+                        - Ashutosh Kumar
                     </Link>
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start items-center">
-                    <Link className="ml-3 text-gray-500" href="https://twitter.com/l_m_manish" target="_blank" rel="noopener noreferrer">
+                    <Link className="ml-3 text-gray-500" href="https://twitter.com/warrior_aashuu" target="_blank" rel="noopener noreferrer">
                         <IconBrandX stroke={2} />
                     </Link>
-                    <Link className="ml-3 text-gray-500" href="https://www.instagram.com/l_m_manish" target="_blank" rel="noopener noreferrer">
+                    <Link className="ml-3 text-gray-500" href="https://www.instagram.com/warrior_aashuu" target="_blank" rel="noopener noreferrer">
                         <svg
                             fill="none"
                             stroke="currentColor"
@@ -32,7 +32,7 @@ const Footer = () => {
                             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
                         </svg>
                     </Link>
-                    <Link className="ml-3 text-gray-500" href="https://www.linkedin.com/in/manishguptafr/" target="_blank" rel="noopener noreferrer">
+                    <Link className="ml-3 text-gray-500" href="https://www.linkedin.com/in/ashutoshkumaraashu/" target="_blank" rel="noopener noreferrer">
                         <svg
                             fill="currentColor"
                             stroke="currentColor"
